@@ -2,19 +2,15 @@ import { useState } from "react";
 
 const App =  () => {
 
-  const [title,setTitle] = useState("Hello world")
+  const [time,settime] = useState(new Date().toLocaleTimeString())
 
-    // let title = "Hello World!"
-
-  const text = () => {
-    setTitle("Hello world! clicked");
-    }
-
+  setInterval( () => {
+    settime(new Date().toLocaleTimeString());
+  } ,1000)
 
   return (
      <>
-      <h1 className="text-3xl"> {title} </h1>
-      <button onClick={text} className="py-2 px-4 bg-teal-400 mt-4 text-white">Click Me</button> 
+      <h1 className="text-center mt-10 text-3xl"> {time} </h1>
      </>
   )
 }
