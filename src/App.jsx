@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Child1 from "./components/Child1";
 import Child2 from "./components/Child2";
+import Container from "./components/Container";
 
 const App =  () => {
 
@@ -12,9 +13,11 @@ const App =  () => {
 
   return (
      <div className="flex items-center justify-center p-10 flex-col">
-      <Child1 title = "Title for child1" />
-      <Child2 title = "Title for child2" />
-     </div>
+      <Container value="hELLO" name="heloww duniya">
+        <h1>Heloeoe</h1>
+        <h2>Worlls</h2>
+      </Container>
+      </div>
   )
 }
 
