@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 
 import Child2 from './components/Child2';
+import UseRef from './components/UseRef';
 
 // Step 1. Create Context
 // export const DataContext = createContext(null);
@@ -26,7 +27,9 @@ const App = () => {
         <Child2 />
       </DataContext.Provider> */}
 
-        <Header  />
+        {/* <Header  /> */}
+
+        <UseRef/>
 
     </div>
   )
